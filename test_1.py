@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 class Model:
     def __init__(self):
-        df = pd.read_csv("data.csv")
+        df = pd.read_csv("data_1.csv")
         self.x = df['x']
         self.y = df['y']
         self.w = 0
