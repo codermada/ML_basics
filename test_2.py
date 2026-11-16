@@ -30,6 +30,8 @@ class Model:
             # print(dcost, self.w)
     def predict(self, x_):
         return x_ * self.w
+    def __str__(self):
+        return f"w = {self.w}, b = {self.b}"
 
 
 model = Model()
@@ -37,3 +39,4 @@ model = Model()
 # print(model.dcost(0.001))
 model.train(0.001, 15000)
 print(model.predict(2))
+print(model)
